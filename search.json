@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Male CNS Cell Type Explorer — Browse and search more than 11,700 neuron types in the Drosophila male central nervous system (CNS) connectome (male-cns v1.0), with each type’s morphology, connectivity, and spatial distribution.\nVisual neuron galleries — Two galleries, one of visual projection neurons and one of central-brain visual neurons, showing their visual input barcodes and anatomical receptive fields."
+  },
+  {
+    "objectID": "resources.html#interactive-neuron-explorers",
+    "href": "resources.html#interactive-neuron-explorers",
+    "title": "Resources",
+    "section": "",
+    "text": "Male CNS Cell Type Explorer — Browse and search more than 11,700 neuron types in the Drosophila male central nervous system (CNS) connectome (male-cns v1.0), with each type’s morphology, connectivity, and spatial distribution.\nVisual neuron galleries — Two galleries, one of visual projection neurons and one of central-brain visual neurons, showing their visual input barcodes and anatomical receptive fields."
+  },
+  {
+    "objectID": "resources.html#eyemaps",
+    "href": "resources.html#eyemaps",
+    "title": "Resources",
+    "section": "Eyemaps",
+    "text": "Eyemaps\n\nEyemap Archive — Precomputed maps from compound-eye ommatidia to their 3D viewing directions, registered to the FAFB/FlyWire and male CNS connectomes. View them in an interactive 3D viewer or download them in several formats."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "Arthur Zhao\nPrincipal Investigator\narthurzhao@nd.edu\n\n\n\n\n\nThis could be you\nSee openings"
+  },
+  {
+    "objectID": "people.html#lab-members",
+    "href": "people.html#lab-members",
+    "title": "People",
+    "section": "",
+    "text": "Arthur Zhao\nPrincipal Investigator\narthurzhao@nd.edu\n\n\n\n\n\nThis could be you\nSee openings"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "What does a brain really see?",
+    "section": "",
+    "text": "Many animals rely on vision to move through the world, find food, and interact with others. How does the brain transform the light striking the retina into visual perception? In our lab, we use computational tools and cellular-resolution brain maps to understand how these transformations happen at the level of single neurons.\n\n\nTo understand how a brain encodes visual perception, we first ask what visual signals are available to it. Our favorite animal to study is the fruit fly (Drosophila melanogaster), an amazing flyer with signature red compound eyes, each made up of hundreds of facet lenses. What a fly can see depends on the geometry of its eyes. Using X-ray scans, we build an eyemap — the viewing direction of every facet of the compound eye (left) — and plot these directions (3D vectors) on the same kind of projection a cartographer uses to flatten the globe (right, color-matched).\n\nVision evolved to guide behavior, so what an animal sees also depends on how it moves. With the eyemap, we can simulate visual input in a virtual environment. This animation shows a virtual fly moving through a naturalistic landscape, with the scene rendered as its compound eyes actually sample it — coarse, nearly panoramic, and uneven across the visual field — rather than as a camera would.\n\n\n  \n    \n    \n  \n  Left to right: bird's-eye view, panoramic view, and compound-eye view.\n\n\n\n\n\n\n\n\n\n\nA single line of sight runs from a facet of the compound eye, through the retina, into a column of the optic lobe.\n\n\n\nBehind each eye facet sits a bundle of photoreceptors, which convert light into neural signals and pass them on to columnar neurons in the optic lobe (the fly brain’s visual center). This columnar arrangement preserves neighbor relationships, so each layered region, from the retina down to the lobula plate (many intermediate layers are not shown here), holds a map of visual space.\nBut how can we use this map to study the properties of individual neurons? Here lies another privilege of working with fruit flies: electron microscopy (EM) connectomes, which contain every neuron and synapse in the brain. The image below shows a sample of visual neurons originating from one optic lobe. Combining the eyemap with the connectome lets us tie every point in the visual world to a location in the brain.\n\n\n\n\nA sample of visual neurons originating from the right optic lobe.\n\n\n\n\n\n\n\n\n\n\nEM reconstruction of a visual projection neuron (VS1) and its predicted direction-selectivity pattern.\n\n\n\nA neuron’s wiring is not arbitrary: the shape of its dendrites, where its axon goes, and the neurons it talks to all constrain what it can compute. We apply novel computational methods to large-scale neuroanatomical data to make quantitative, testable predictions about neuronal function. Using the eyemap, we can place a neuron’s inputs in visual space and predict its receptive field, such as its local motion preference. Take VS1, a large neuron that receives inputs in the lobula plate and sends its axon into the central brain. From the eyemap and its inputs, we can map which direction of motion it prefers at each point in space (arrows in the figure): back-to-front above the fly and downward in front of it — the pattern a fly would see as it lifts its head (a pitch rotation).\nWith access to both the visual input to the compound eyes and every neuron in the brain, we can build biologically constrained network models that simulate how the brain turns the images captured by the eyes into signals that drive behavior, and how that behavior in turn shapes the next view — closing the loop from stimulus to brain to behavior."
+  },
+  {
+    "objectID": "index.html#the-view-from-a-flys-cockpit",
+    "href": "index.html#the-view-from-a-flys-cockpit",
+    "title": "What does a brain really see?",
+    "section": "",
+    "text": "To understand how a brain encodes visual perception, we first ask what visual signals are available to it. Our favorite animal to study is the fruit fly (Drosophila melanogaster), an amazing flyer with signature red compound eyes, each made up of hundreds of facet lenses. What a fly can see depends on the geometry of its eyes. Using X-ray scans, we build an eyemap — the viewing direction of every facet of the compound eye (left) — and plot these directions (3D vectors) on the same kind of projection a cartographer uses to flatten the globe (right, color-matched).\n\nVision evolved to guide behavior, so what an animal sees also depends on how it moves. With the eyemap, we can simulate visual input in a virtual environment. This animation shows a virtual fly moving through a naturalistic landscape, with the scene rendered as its compound eyes actually sample it — coarse, nearly panoramic, and uneven across the visual field — rather than as a camera would.\n\n\n  \n    \n    \n  \n  Left to right: bird's-eye view, panoramic view, and compound-eye view."
+  },
+  {
+    "objectID": "index.html#map-the-world-into-the-brain",
+    "href": "index.html#map-the-world-into-the-brain",
+    "title": "What does a brain really see?",
+    "section": "",
+    "text": "A single line of sight runs from a facet of the compound eye, through the retina, into a column of the optic lobe.\n\n\n\nBehind each eye facet sits a bundle of photoreceptors, which convert light into neural signals and pass them on to columnar neurons in the optic lobe (the fly brain’s visual center). This columnar arrangement preserves neighbor relationships, so each layered region, from the retina down to the lobula plate (many intermediate layers are not shown here), holds a map of visual space.\nBut how can we use this map to study the properties of individual neurons? Here lies another privilege of working with fruit flies: electron microscopy (EM) connectomes, which contain every neuron and synapse in the brain. The image below shows a sample of visual neurons originating from one optic lobe. Combining the eyemap with the connectome lets us tie every point in the visual world to a location in the brain.\n\n\n\n\nA sample of visual neurons originating from the right optic lobe."
+  },
+  {
+    "objectID": "index.html#predict-any-neurons-function",
+    "href": "index.html#predict-any-neurons-function",
+    "title": "What does a brain really see?",
+    "section": "",
+    "text": "EM reconstruction of a visual projection neuron (VS1) and its predicted direction-selectivity pattern.\n\n\n\nA neuron’s wiring is not arbitrary: the shape of its dendrites, where its axon goes, and the neurons it talks to all constrain what it can compute. We apply novel computational methods to large-scale neuroanatomical data to make quantitative, testable predictions about neuronal function. Using the eyemap, we can place a neuron’s inputs in visual space and predict its receptive field, such as its local motion preference. Take VS1, a large neuron that receives inputs in the lobula plate and sends its axon into the central brain. From the eyemap and its inputs, we can map which direction of motion it prefers at each point in space (arrows in the figure): back-to-front above the fly and downward in front of it — the pattern a fly would see as it lifts its head (a pitch rotation).\nWith access to both the visual input to the compound eyes and every neuron in the brain, we can build biologically constrained network models that simulate how the brain turns the images captured by the eyes into signals that drive behavior, and how that behavior in turn shapes the next view — closing the loop from stimulus to brain to behavior."
+  },
+  {
+    "objectID": "openings.html",
+    "href": "openings.html",
+    "title": "Openings",
+    "section": "",
+    "text": "If you are interested in how the brain works and in what we do in the lab, feel free to reach out at arthurzhao@nd.edu. We suggest applying through one of the graduate programs below at the University of Notre Dame.\nApplications go through Notre Dame’s GradConnect portal; see each program’s page for deadlines and requirements.\n\nPhD in Physics, Department of Physics and Astronomy\nPhD in Applied and Computational Mathematics and Statistics, Department of Applied and Computational Mathematics and Statistics (ACMS)\nPhD in Integrated Biomedical Sciences, Integrated Biomedical Sciences (IBMS) Program"
+  },
+  {
+    "objectID": "openings.html#graduate-students",
+    "href": "openings.html#graduate-students",
+    "title": "Openings",
+    "section": "",
+    "text": "If you are interested in how the brain works and in what we do in the lab, feel free to reach out at arthurzhao@nd.edu. We suggest applying through one of the graduate programs below at the University of Notre Dame.\nApplications go through Notre Dame’s GradConnect portal; see each program’s page for deadlines and requirements.\n\nPhD in Physics, Department of Physics and Astronomy\nPhD in Applied and Computational Mathematics and Statistics, Department of Applied and Computational Mathematics and Statistics (ACMS)\nPhD in Integrated Biomedical Sciences, Integrated Biomedical Sciences (IBMS) Program"
+  },
+  {
+    "objectID": "openings.html#postdocs",
+    "href": "openings.html#postdocs",
+    "title": "Openings",
+    "section": "Postdocs",
+    "text": "Postdocs\nPlease email me your CV and a brief description of your research interests."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Google Scholar\n\n\n\n\n\n\n“Sexual Dimorphism in the Complete Drosophila Male Central Nervous System Connectome.” Berg, Stuart, Isabella R. Beckett, Marta Costa, et al. 2026. Cell 189 (18): 5504–5526.e15. https://doi.org/10.1016/j.cell.2026.08.015.\n\n\n“The Organization of Visual Pathways in the Drosophila Brain.” Hoeller, Judith, Arthur Zhao, Aljoscha Nern, Edward M. Rogers, Sandro Romani, and Michael B. Reiser. 2026. Cell 189 (18): 5552–5570.e10. https://doi.org/10.1016/j.cell.2026.08.014.\n\n\n“Population Morphology Implies a Common Developmental Blueprint for Drosophila Motion Detectors.” Drummond, Nikolas, Arthur Zhao, and Alexander Borst. 2026. PLOS Computational Biology 22 (8): e1014657. https://doi.org/10.1371/journal.pcbi.1014657.\n\n\n“Eye Structure Shapes Neuron Function in Drosophila Motion Vision.” Zhao, Arthur, Eyal Gruntman, Aljoscha Nern, et al. 2025. Nature 646 (8083): 135–42. https://doi.org/10.1038/s41586-025-09276-5.\n\n\n“Connectome-Driven Neural Inventory of a Complete Visual System.” Nern, Aljoscha, Frank Loesche, Shin-ya Takemura, et al. 2025. Nature 641 (8065): 1225–37. https://doi.org/10.1038/s41586-025-08746-0.\n\n\n“Connectomic Reconstruction Predicts Visual Features Used for Navigation.” Garner, Dustin, Emil Kind, Jennifer Yuet Ha Lai, et al. 2024. Nature 634 (8032): 181–90. https://doi.org/10.1038/s41586-024-07967-z.\n\n\n“A Comprehensive Neuroanatomical Survey of the Drosophila Lobula Plate Tangential Neurons with Predictions for Their Optic Flow Sensitivity.” Zhao, Arthur, Aljoscha Nern, Sanna Koskela, et al. 2024. eLife 13 (January): RP93659. https://doi.org/10.7554/eLife.93659.1.\n\n\n“Synaptic Gradients Transform Object Location to Action.” Dombrovski, Mark, Martin Y. Peek, Jin-Yong Park, et al. 2023. Nature 613 (7944): 534–42. https://doi.org/10.1038/s41586-022-05562-8.\n\n\n“Synaptic Targets of Photoreceptors Specialized to Detect Color and Skylight Polarization in Drosophila.” Kind, Emil, Kit D. Longden, Aljoscha Nern, et al. 2021. eLife 10 (December): e71858. https://doi.org/10.7554/eLife.71858.\n\n\n“Spatial Readout of Visual Looming in the Central Brain of Drosophila.” Morimoto, Mai M., Aljoscha Nern, Arthur Zhao, et al. 2020. eLife 9 (November): e57685. https://doi.org/10.7554/eLife.57685.\n\n\n“Quadruple Coincidence Measurement of Electron Correlation in Strong-Field Molecular Double Ionization.” Zhao, Arthur, Chuan Cheng, Spiridoula Matsika, and Thomas Weinacht. 2018. Physical Review A 97 (4): 043412. https://doi.org/10.1103/PhysRevA.97.043412.\n\n\n“Coincidence Velocity Map Imaging Using Tpx3Cam, a Time Stamping Optical Camera with 1.5 Ns Timing Resolution.” Zhao, Arthur, Martin van Beuzekom, Bram Bouwens, et al. 2017. Review of Scientific Instruments 88 (11): 113104. https://doi.org/10.1063/1.4996888.\n\n\n“Time-Resolved Measurement of Internal Conversion Dynamics in Strong-Field Molecular Ionization.” Tagliamonti, Vincent, Brian Kaufman, Arthur Zhao, Tamás Rozgonyi, Philipp Marquetand, and Thomas Weinacht. 2017. Physical Review A 96 (2): 021401. https://doi.org/10.1103/PhysRevA.96.021401.\n\n\n“Ionic Dynamics Underlying Strong-Field Dissociative Molecular Ionization.” Zhao, Arthur, Péter Sándor, Vincent Tagliamonti, Tamás Rozgonyi, Philipp Marquetand, and Thomas Weinacht. 2017. Physical Review A 96 (2): 023404. https://doi.org/10.1103/PhysRevA.96.023404.\n\n\n“Coincidence Velocity Map Imaging Using a Single Detector.” Zhao, Arthur, Péter Sándor, and Thomas Weinacht. 2017. The Journal of Chemical Physics 147 (1): 013922. https://doi.org/10.1063/1.4981917.\n\n\n“Nonadiabatic Dynamics and Multiphoton Resonances in Strong-Field Molecular Ionization with Few-Cycle Laser Pulses.” Tagliamonti, Vincent, Péter Sándor, Arthur Zhao, Tamás Rozgonyi, Philipp Marquetand, and Thomas Weinacht. 2016. Physical Review A 93 (5): 051401. https://doi.org/10.1103/PhysRevA.93.051401.\n\n\n“Molecular Double Ionization Using Strong Field Few-Cycle Laser Pulses.” Zhao, Arthur, Péter Sándor, Vincent Tagliamonti, Spiridoula Matsika, and Thomas Weinacht. 2016. The Journal of Physical Chemistry A 120 (19): 3233–40. https://doi.org/10.1021/acs.jpca.5b11713.\n\n\n“Strong Field Molecular Ionization in the Impulsive Limit: Freezing Vibrations with Short Pulses.” Sándor, Péter, Vincent Tagliamonti, Arthur Zhao, et al. 2016. Physical Review Letters 116 (6): 063002. https://doi.org/10.1103/PhysRevLett.116.063002.\n\n\n“Removing Electrons from More Than One Orbital: Direct and Indirect Pathways to Excited States of Molecular Cations.” Zhao, Arthur, Péter Sándor, Tamás Rozgonyi, and Thomas Weinacht. 2014. Journal of Physics B: Atomic, Molecular and Optical Physics 47 (20): 204023. https://doi.org/10.1088/0953-4075/47/20/204023.\n\n\n“Strong Field Molecular Ionization to Multiple Ionic States: Direct Versus Indirect Pathways.” Sándor, Péter, Arthur Zhao, Tamás Rozgonyi, and Thomas Weinacht. 2014. Journal of Physics B: Atomic, Molecular and Optical Physics 47 (12): 124021. https://doi.org/10.1088/0953-4075/47/12/124021."
+  }
+]
