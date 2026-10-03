@@ -1,0 +1,5 @@
+# Works that scripts/update_bib.py must never add to publications.bib.
+# One per line: a DOI (e.g. 10.1101/2020.01.01.123456) or an exact title
+# (case, spaces and punctuation are ignored). Text after "#" is a comment.
+
+Ionic Dynamics in Molecular Strong Field Ionization   # PhD thesis, 2017

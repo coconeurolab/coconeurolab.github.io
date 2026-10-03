@@ -1,0 +1,49 @@
+---
+title: "Publications"
+bibliography: publications.bib
+csl: chicago-author-date-reverse-chrono.csl
+nocite: |
+  @*
+---
+
+<!-- This page renders every entry in publications.bib, cited or not, newest
+     first. To add a paper, paste its BibTeX entry into publications.bib
+     (from Zotero, or Google Scholar's "Cite" > "BibTeX") — nothing here
+     needs editing. -->
+
+::: {.scholar-link}
+<i class="bi bi-mortarboard-fill"></i> 
+[Google Scholar](https://scholar.google.com/citations?user=bgYqODQAAAAJ&hl=en)
+:::
+
+<input type="search" id="pub-search" class="pub-search"
+       placeholder="Search publications by title, author, journal, year…"
+       aria-label="Search publications">
+
+<p id="pub-search-count" class="pub-search-count"></p>
+
+::: {#refs}
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var input = document.getElementById("pub-search");
+  var count = document.getElementById("pub-search-count");
+  var container = document.getElementById("refs");
+  if (!input || !container) return;
+  var entries = Array.prototype.slice.call(container.querySelectorAll(".csl-entry"));
+
+  function applyFilter() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    entries.forEach(function (entry) {
+      var match = q === "" || entry.textContent.toLowerCase().indexOf(q) !== -1;
+      entry.style.display = match ? "" : "none";
+      if (match) shown++;
+    });
+    count.textContent = q === "" ? "" : shown + " of " + entries.length + " publications match";
+  }
+
+  input.addEventListener("input", applyFilter);
+});
+</script>

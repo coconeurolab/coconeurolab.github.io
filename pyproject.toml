@@ -1,0 +1,13 @@
+# Lint/type-check settings for the helper scripts in scripts/. The site itself
+# is built by Quarto and does not use this file.
+
+[tool.ruff]
+# Max line width. Ruff's formatter wraps longer lines and the linter flags them.
+line-length = 88
+
+[tool.ruff.lint]
+#   E = pycodestyle errors, F = Pyflakes, W = pycodestyle warnings, I = isort
+select = ["E", "F", "W", "I"]
+
+[tool.mypy]
+strict = true

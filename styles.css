@@ -1,0 +1,256 @@
+/* Bootswatch's darkly recolours Bootstrap's *text* tokens but leaves the
+   surface and border tokens at their light-mode defaults, so anything
+   Bootstrap draws with them (table rules, <hr>, blockquote borders,
+   input backgrounds) comes out near-white against the #222 page. Reset
+   them here; styles.css is loaded after bootstrap, so these win. */
+:root {
+  --bs-border-color: rgba(255, 255, 255, 0.15);
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-secondary-bg: #2b2b2b;
+  --bs-tertiary-bg: #2b2b2b;
+  --bs-emphasis-color: #fff;
+}
+
+/* Make long equations scroll horizontally instead of breaking the
+   page layout on phones. mjx-container is the MathJax 3 selector,
+   which is what Quarto uses. */
+mjx-container {
+  display: inline-flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+/* Stop wide tables (long author lists, data tables) from
+   overflowing the viewport on narrow screens. */
+.table-responsive,
+table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Highlighted publications on the Publications page: title, citation,
+   description, then a representative figure, stacked in one column.
+   Colours come from Bootstrap's variables so they track the site theme
+   instead of being pinned to a light background. */
+.pub-highlight {
+  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.pub-highlight:last-of-type {
+  border-bottom: none;
+}
+
+/* --- Backdrop for embedded figures ---------------------------------
+   Figures arrive in two very different forms, so there are three
+   treatments rather than one:
+
+   .fig-plain   No transformation — the figure sits straight on the dark
+                page. For figures already exported for a dark backdrop:
+                transparent or dark background with light text.
+                images/eyemap-dark.png is one of these. This is the
+                default, because it is the only option that never alters
+                the figure's colours.
+   .fig-invert  Flip luminance, then rotate hues a half turn to undo the
+                complement the flip introduces. For journal figures
+                printed on white paper that cannot be re-exported. Hues
+                survive, but saturated colours come back lighter, so
+                avoid it where an exact colour carries meaning.
+   .fig-light   Figure untouched, framed on a white card. For white-paper
+                figures where colour fidelity matters more than matching
+                the page.
+
+   Per-figure, in the Markdown:
+       ![caption](images/fig.png){.fig-invert}
+   The properties inherit, so the class works whether Pandoc puts it on
+   the <img> or on the wrapping <figure>.
+
+   To change the SITE-WIDE default, copy the three values out of the
+   class you want into the :root block below. */
+:root {
+  --fig-filter: none;
+  --fig-bg: transparent;
+  --fig-pad: 0;
+}
+
+.fig-plain {
+  --fig-filter: none;
+  --fig-bg: transparent;
+  --fig-pad: 0;
+}
+
+.fig-invert {
+  --fig-filter: invert(1) hue-rotate(180deg);
+  --fig-bg: transparent;
+  --fig-pad: 0;
+}
+
+.fig-light {
+  --fig-filter: none;
+  --fig-bg: #fff;
+  --fig-pad: 0.75em;
+}
+
+.pub-highlight img,
+figure img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+  border-radius: 0.4em;
+  filter: var(--fig-filter);
+  background-color: var(--fig-bg);
+  padding: var(--fig-pad);
+}
+
+.pub-highlight figcaption {
+  font-size: 0.9em;
+  color: var(--bs-secondary-color);
+}
+
+/* .float-section contains a floated figure, so the next heading starts
+   below it rather than wrapping beside it. */
+.float-section {
+  display: flow-root;
+}
+
+/* Full-text-width video (side-by-side fly simulation on the Research page). */
+.sim-video {
+  width: 100%;
+  margin: 0.25em 0 1em 0;
+}
+
+.sim-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4em;
+}
+
+.sim-video figcaption {
+  font-size: 0.8em;
+  color: var(--bs-secondary-color);
+  margin-top: 0.4em;
+}
+
+/* Still figure floated left of its section's text (ol-schema on the
+   Research page). Wrap it with the text in a .float-section div.
+   Change `width` to resize it. */
+.float-fig-left {
+  float: left;
+  width: 50%;
+  margin: 0 1.5em 1em 0;
+}
+
+/* Mirror image of .float-fig-left (vs1-rf on the home page). */
+.float-fig-right {
+  float: right;
+  width: 50%;
+  margin: 0 0 1em 1.5em;
+}
+
+.float-fig-left figure img,
+.float-fig-right figure img {
+  margin-top: 0.25em;
+}
+
+.float-fig-left figcaption,
+.float-fig-right figcaption {
+  font-size: 0.8em;
+  color: var(--bs-secondary-color);
+}
+
+@media (max-width: 576px) {
+  /* Too little room beside it for text to wrap; stack it full width. */
+  .float-fig-left,
+  .float-fig-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+}
+
+/* People page: one card per person, as many columns as fit. */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+  gap: 2em 1.5em;
+  margin: 1em 0 2.5em;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 0.75em;
+}
+
+/* Empty placeholder circle on the last card, sized like a photo. */
+.person-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed var(--bs-border-color);
+  border-radius: 50%;
+  margin: 0 auto 0.75em;
+}
+
+.person-open .person-name {
+  color: var(--bs-secondary-color);
+}
+
+.person p {
+  margin-bottom: 0.2em;
+}
+
+.person-name {
+  font-weight: 600;
+}
+
+.person-role {
+  font-size: 0.9em;
+  color: var(--bs-secondary-color);
+}
+
+/* Long addresses must wrap inside a narrow card rather than overflow it. */
+.person-email {
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+/* Google Scholar link above the publication search box. */
+.scholar-link {
+  margin-bottom: 1em;
+}
+
+/* Search box on the Publications page. */
+.pub-search {
+  display: block;
+  width: 100%;
+  max-width: 32em;
+  padding: 0.5em 0.75em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: var(--bs-body-color);
+  background-color: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.3em;
+}
+
+.pub-search::placeholder {
+  color: var(--bs-secondary-color);
+}
+
+.pub-search-count {
+  font-size: 0.85em;
+  color: var(--bs-secondary-color);
+  margin-bottom: 1.5em;
+}

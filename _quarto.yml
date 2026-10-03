@@ -1,0 +1,37 @@
+project:
+  type: website
+  render:          # every page except local/ (private notes, never published)
+    - "*.qmd"
+    - "!local/"
+  resources:
+    - CNAME          # this is what keeps the custom domain alive across rebuilds
+    - images/sim_hstack.webm  # referenced only from raw HTML <source> tags, so
+    - images/sim_hstack.mp4   # list them rather than rely on Quarto detecting them
+
+website:
+  title: "Computational Connectomics Lab"
+  site-url: "https://www.coconeurolab.org"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Research
+      - href: people.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+      - href: resources.qmd
+        text: Resources
+      - href: openings.qmd
+        text: Openings
+    right:
+      - icon: github
+        href: https://github.com/coconeurolab
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto      # only relevant if any page runs code

@@ -1,0 +1,13 @@
+---
+title: "Resources"
+---
+
+## Interactive neuron explorers
+
+- [Male CNS Cell Type Explorer](https://reiserlab.github.io/celltype-explorer-drosophila-male-cns/index.html) — Browse and search more than 11,700 neuron types in the *Drosophila* male central nervous system (CNS) connectome (male-cns v1.0), with each type's morphology, connectivity, and spatial distribution.
+- [Visual neuron galleries](https://github.com/reiserlab/visualpathways) — Two galleries, one of visual projection neurons and one of central-brain visual neurons, showing their visual input barcodes and anatomical receptive fields.
+
+## Eyemaps
+
+- [Eyemap Archive](https://artxz.github.io/eyemap-archive/) — Precomputed maps from compound-eye ommatidia to their 3D viewing directions, registered to the FAFB/FlyWire and male CNS connectomes. View them in an interactive 3D viewer or download them in several formats.
+

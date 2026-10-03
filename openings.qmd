@@ -1,0 +1,25 @@
+---
+title: "Openings"
+---
+
+<!-- Prospective students overwhelmingly find lab sites on phones, so keep
+     this page short and easy to read one-handed. -->
+
+## Graduate students
+
+If you are interested in how the brain works and in what we do in the lab, feel free to reach out at <arthurzhao@nd.edu>. We suggest applying through one of the graduate programs below at the University of Notre Dame.
+
+Applications go through Notre Dame's
+[GradConnect portal](https://gradconnect.nd.edu/apply/); see each program's
+page for deadlines and requirements.
+
+- [PhD in Physics](https://graduateschool.nd.edu/degree-programs/physics-phd---doctoral/),
+  [Department of Physics and Astronomy](https://physics.nd.edu/graduate/apply/)
+- [PhD in Applied and Computational Mathematics and Statistics](https://graduateschool.nd.edu/degree-programs/applied-and-computational-mathematics-and-statistics-phd---doctoral/),
+  [Department of Applied and Computational Mathematics and Statistics (ACMS)](https://acms.nd.edu/graduate/phd-programs/)
+- [PhD in Integrated Biomedical Sciences](https://graduateschool.nd.edu/degree-programs/integrated-biomedical-sciences-phd---doctoral/),
+  [Integrated Biomedical Sciences (IBMS) Program](https://ibms.nd.edu/apply-now/)
+
+## Postdocs
+
+Please email me your CV and a brief description of your research interests.
